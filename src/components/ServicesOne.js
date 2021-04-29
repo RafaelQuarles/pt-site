@@ -1,24 +1,77 @@
 import React from "react"
 import Title from "./Title"
-import services from "../constants/onlineplans"
+import services from "../constants/onlineservices"
+
+import styled, { css } from "styled-components"
+
+const ServiceContainer = styled.div`
+  margin: 0 auto;
+  @media screen and (min-width: 1000px) {
+    max-width: 60%;
+  }
+`
+
+const Service = styled.article`
+  background: var(--clr-grey-1);
+  color: var(--clr-grey-10);
+  padding: 1rem 0rem;
+  margin-bottom: 2rem;
+  border-radius: 0;
+  text-align: center;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+
+  @media screen and (min-width: 1000px) {
+    border-radius: var(--radius);
+    padding: 1rem 1.5rem;
+  }
+`
+
+const Underline = styled.div`
+  width: 4rem;
+  height: 0.1rem;
+  margin-bottom: 1.25rem;
+  background: var(--clr-primary-5);
+  margin-left: auto;
+  margin-right: auto;
+  }
+`
+
+const ServiceTitle = styled.h4`
+  font-size: 19px;
+  line-height: 1.25;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+`
+
+const ServiceText = styled.p`
+  color: var(--clr-grey-5);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+`
+
 const ServicesOne = () => {
   return (
     <section className="section bg-grey">
       <Title title="About Program" />
-      <div className="section-center services-center">
+      <ServiceContainer className="section-center">
         {services.map(service => {
           const { id, icon, title, text } = service
 
           return (
-            <article key={id} className="service">
-              {icon}
-              <h4>{title}</h4>
-              <div className="underline"></div>
-              <p>{text}</p>
-            </article>
+            <Service key={id}>
+              {/* {icon} */}
+              <ServiceTitle>{title}</ServiceTitle>
+              <Underline />
+              <ServiceText>{text}</ServiceText>
+            </Service>
           )
         })}
-      </div>
+      </ServiceContainer>
     </section>
   )
 }

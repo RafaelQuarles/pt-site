@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Personal Trainer Template Site`,
+    description: `Use this site to help PT's sell their services and cater to the virtual market.`,
     author: `@RafaWebDev`,
   },
   plugins: [

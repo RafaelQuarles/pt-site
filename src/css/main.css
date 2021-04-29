@@ -29,7 +29,7 @@ Variables
   --clr-grey-3: hsl(209, 34%, 30%);
   --clr-grey-4: hsl(209, 28%, 39%);
   /* grey used for paragraphs */
-  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-5: hsl(0, 0%, 64%);
   --clr-grey-8: hsl(210, 31%, 80%);
   --clr-grey-9: hsl(212, 33%, 89%);
   --clr-grey-10: hsl(210, 36%, 96%);
@@ -175,12 +175,8 @@ p {
 .section-center {
   margin: 0 auto;
 }
-@media screen and (min-width: 992px) {
-  .section-center {
-  }
-}
 .section-title {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 .bg-grey {
@@ -198,7 +194,7 @@ p {
 }
 .social-link {
   font-size: 1.75rem;
-  color: var(--clr-grey-1);
+  color: var(--clr-grey-10);
   transition: var(--transition);
 }
 .social-link:hover {
@@ -408,7 +404,8 @@ Services
 ===============
 */
 .service {
-  background: var(--clr-white);
+  background: var(--clr-grey-1);
+  color: var(--clr-grey-10);
   padding: 3rem 1.5rem;
   margin-bottom: 2rem;
   border-radius: 0;
@@ -421,12 +418,13 @@ Services
   margin-bottom: 1.5rem;
 }
 .service .underline {
-  width: 3rem;
+  width: 10rem;
   height: 0.12rem;
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 .service p {
+  color: var(--clr-grey-10);
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }

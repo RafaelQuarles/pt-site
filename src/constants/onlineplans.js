@@ -3,20 +3,26 @@ import { FaDumbbell, FaSketch, FaFireAlt } from "react-icons/fa"
 export default [
   {
     id: 1,
+    link: "/",
     icon: <FaDumbbell className="service-icon" />,
-    title: "Calculated & Customized Programming",
-    text: `I take your fitness goals seriously, and understand that losing weight and gaining muscle can be challenging; my goal is to help you overcome hurdles and reach your goals. I'll analyze your body type, BMI, experience, ethnicity, metabolism, and more in order to create your individualized fitness plan.`,
+    title: "One Month Of Coaching",
+    price: "200",
+    text: `We'll work closely together through video calls and text messaging and through personalized and science-based structured programming, implement healthy habits to build your dream physique.`,
   },
   {
     id: 2,
+    link: "/",
     icon: <FaFireAlt className="service-icon" />,
-    title: "Knowledgeable Training Expertise",
-    text: `With years of success and experience, I am capable of analyzing your body and creating an individualized fitness plan. Plans include calculated, healthy eating and structured exercise in order to ensure the best results for my clients. I will work with you to keep you on track and motivated to reach your goals.`,
+    title: "3-Month Discount Package",
+    price: "500",
+    text: `Three full months of online coaching under me as my personal client!`,
   },
   {
     id: 3,
+    link: "/",
     icon: <FaSketch className="service-icon" />,
-    title: "Your Success is My Goal",
-    text: `I understand that adapting new fitness habits can be extremely difficult. My goal is to change your view on fitness, so that it becomes a part of who you are and your lifestyle. I strongly believe that if you practice healthy habits, you will be able to obtain your dream physique while maintaining a happy, healthy lifestyle. `,
+    title: "6-Month Discount Package",
+    price: "800",
+    text: `Six full months of online coaching under me as my personal client!`,
   },
 ]
