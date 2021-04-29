@@ -380,7 +380,7 @@ p {
   ===============
   */
 .hero {
-  height: 100vh;
+  height: 90vh;
 }
 .hero-info {
   color: var(--clr-grey-10);
