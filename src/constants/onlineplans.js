@@ -7,7 +7,7 @@ export default [
     icon: <FaDumbbell className="service-icon" />,
     title: "One Month Of Coaching",
     price: "200",
-    text: `We'll work closely together through video calls and text messaging and through personalized and science-based structured programming, implement healthy habits to build your dream physique.`,
+    text: `One month of online coaching under me as my personal client!`,
   },
   {
     id: 2,

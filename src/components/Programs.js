@@ -4,6 +4,22 @@ import { Link } from "gatsby"
 import programs from "../constants/onlineplans"
 import styled, { css } from "styled-components"
 
+const TitleText = styled.p`
+  color: var(--clr-grey-5);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  text-align: center;
+
+  margin: 2rem auto;
+  @media screen and (min-width: 1000px) {
+    max-width: 60%;
+  }
+`
+
 const ProgramContainer = styled.div`
   margin: 0 auto;
   @media screen and (min-width: 1000px) {
@@ -16,11 +32,11 @@ const ProgramContainer = styled.div`
 `
 
 const Program = styled.article`
+  position: relative;
   background: var(--clr-grey-10);
   color: var(--clr-grey-1);
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  min-height: 328px;
   border-radius: var(--radius);
   text-align: center;
   -webkit-transition: var(--transition);
@@ -76,24 +92,39 @@ const ProgramText = styled.p`
   transition: var(--transition);
 `
 
+const BuyButton = styled.button`
+  background: var(--clr-grey-1);
+  color: var(--clr-primary-9);
+  border-color: var(--clr-primary-9);
+  padding: 10px;
+  border-radius: 7px;
+  position: absolute;
+  bottom: -20px;
+  transform: translateX(-45px);
+`
+
 const Programs = () => {
   return (
     <section className="section bg-grey">
       <Title title="Coaching Packages" />
+      <TitleText>
+        We'll work closely together through video calls and text messaging and
+        through personalized and science-based structured programming, implement
+        healthy habits to build your dream physique.
+      </TitleText>
       <ProgramContainer className="section-center">
         {programs.map(program => {
-          const { id, link, icon, title, price, text } = program
+          const { id, icon, title, price, text, link } = program
 
           return (
-            <Link to={link}>
-              <Program key={id}>
-                {icon}
-                <ProgramTitle>{title}</ProgramTitle>
-                <Underline />
-                <ProgramPrice>${price}</ProgramPrice>
-                <ProgramText>{text}</ProgramText>
-              </Program>
-            </Link>
+            <Program key={id}>
+              {icon}
+              <ProgramTitle>{title}</ProgramTitle>
+              <Underline />
+              <ProgramPrice>${price}</ProgramPrice>
+              <ProgramText>{text}</ProgramText>
+              <BuyButton>BUY PLAN</BuyButton>
+            </Program>
           )
         })}
       </ProgramContainer>
