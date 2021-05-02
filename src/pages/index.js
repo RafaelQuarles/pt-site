@@ -8,6 +8,7 @@ import Hero from "../components/Hero"
 import SocialLinks from "../constants/socialLinks"
 import styled from "styled-components"
 import Programs from "../components/Programs"
+import Gallery from "../components/Gallery"
 
 const SocialLinksContainer = styled.div`
   display: grid;
@@ -30,6 +31,7 @@ const IndexPage = () => (
       <SocialLinks />
     </SocialLinksContainer>
     <ServicesOne />
+    <Gallery />
     <Programs />
   </Layout>
 )
