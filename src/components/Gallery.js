@@ -13,31 +13,23 @@ const GalleryContainer = styled.ul`
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  grid-gap: 0vmin;
+  grid-gap: 2vmin;
   justify-items: center;
   align-items: center;
-  @media screen and (max-width: 1000px) {
-    width: 140vw;
-    right: 20vw;
-  }
+  overflow: hidden;
 `
 
 const Image = styled.li`
   z-index: 1;
   grid-column: span 2;
   max-width: 100%;
-  margin-bottom: -51%;
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  margin-bottom: -52%;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 99%, 0% 50%);
   transform: scale(1);
   transition: all 0.25s;
 
   &:nth-child(5n + 1) {
     grid-column: 2 / span 2;
-  }
-
-  &:hover {
-    z-index: 2;
-    transform: scale(1.1);
   }
 `
 
