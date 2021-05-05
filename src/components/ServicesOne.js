@@ -4,10 +4,12 @@ import services from "../constants/onlineservices"
 
 import styled, { css } from "styled-components"
 
-const ServiceContainer = styled.div`
+const ServiceContainer = styled.section`
+  background: var(--clr-grey-1);
+  padding: 1rem 2rem;
   margin: 0 auto;
   @media screen and (min-width: 1000px) {
-    max-width: 60%;
+    padding: 2rem 12rem 1rem 12rem;
   }
 `
 
@@ -56,23 +58,22 @@ const ServiceText = styled.p`
 
 const ServicesOne = () => {
   return (
-    <section className="section bg-grey">
+    <ServiceContainer>
       <Title title="About Program" />
-      <ServiceContainer>
-        {services.map(service => {
-          const { id, icon, title, text } = service
 
-          return (
-            <Service key={id}>
-              {/* {icon} */}
-              <ServiceTitle>{title}</ServiceTitle>
-              <Underline />
-              <ServiceText>{text}</ServiceText>
-            </Service>
-          )
-        })}
-      </ServiceContainer>
-    </section>
+      {services.map(service => {
+        const { id, icon, title, text } = service
+
+        return (
+          <Service key={id}>
+            {/* {icon} */}
+            <ServiceTitle>{title}</ServiceTitle>
+            <Underline />
+            <ServiceText>{text}</ServiceText>
+          </Service>
+        )
+      })}
+    </ServiceContainer>
   )
 }
 

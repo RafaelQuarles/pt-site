@@ -54,7 +54,7 @@ const Hero = () => {
     >
       <HeroContainer>
         <HeroTitle>BUILD YOUR DREAM BODY</HeroTitle>
-        <HeroSubTitle>Work with NASM Certified Pro Trainer!</HeroSubTitle>
+        <HeroSubTitle>Work with Sam Seldor Certified Pro Trainer!</HeroSubTitle>
         <HeroButton>
           <Link to="/" className="btn">
             Click Here for Coaching or Custom Programs
