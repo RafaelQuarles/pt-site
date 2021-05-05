@@ -58,7 +58,7 @@ const ServicesOne = () => {
   return (
     <section className="section bg-grey">
       <Title title="About Program" />
-      <ServiceContainer className="section-center">
+      <ServiceContainer>
         {services.map(service => {
           const { id, icon, title, text } = service
 

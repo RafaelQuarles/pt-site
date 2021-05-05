@@ -169,7 +169,7 @@ p {
 
 /* section */
 .section {
-  padding: 5rem 1rem;
+  padding: 1rem 1rem;
 }
 
 .section-center {
@@ -187,7 +187,7 @@ p {
 }
 /* social links */
 .social-links {
-  margin-top: 2rem;
+  margin: 2rem auto;
   width: 15rem;
   display: flex;
   justify-content: space-between;
