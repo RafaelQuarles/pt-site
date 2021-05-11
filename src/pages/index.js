@@ -9,6 +9,7 @@ import SocialLinks from "../constants/socialLinks"
 import styled from "styled-components"
 import Programs from "../components/Programs"
 import GalleryHex from "../components/GalleryHex"
+import GallerySlide from "../components/GallerySlide"
 
 const SocialLinksContainer = styled.div`
   display: grid;
@@ -33,6 +34,7 @@ const IndexPage = () => (
     <ServicesOne />
     <GalleryHex />
     <Programs />
+    <GallerySlide />
   </Layout>
 )
 
