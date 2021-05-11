@@ -31,7 +31,7 @@ const GalleryContainer = styled.div`
     column-count:         2;
    
     img {
-    height: 130px !important;
+    height: 40vw !important;
   }
    } 
 }
