@@ -37,7 +37,7 @@ const GalleryContainer = styled.div`
 }
 `
 
-const GallerySlide = () => {
+const GalleryFlex = () => {
   return (
     <Wrapper>
       <GalleryContainer>
@@ -94,4 +94,4 @@ const GallerySlide = () => {
   )
 }
 
-export default GallerySlide
+export default GalleryFlex
