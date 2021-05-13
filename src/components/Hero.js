@@ -8,7 +8,7 @@ import { FaAngleDoubleDown } from "react-icons/fa"
 const HeroContainer = styled.section`
   margin: 0 auto;
   padding: 4rem 1rem;
-  height: 90vh;
+  height: 100vh;
   color: var(--clr-grey-10);
   text-shadow: 1px 1px var(--clr-grey-1);
   @media screen and (min-width: 1000px) {
@@ -53,9 +53,9 @@ const Hero = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        desktop: file(relativePath: { eq: "hero-dark.png" }) {
+        desktop: file(relativePath: { eq: "hero_dark.png" }) {
           childImageSharp {
-            fluid(quality: 90, maxWidth: 1920) {
+            fluid(quality: 90, maxWidth: 2000) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }

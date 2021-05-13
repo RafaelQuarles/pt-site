@@ -17,12 +17,8 @@ const GalleryContainer = styled.div`
    column-gap:0px;
 
   img {
-    filter: grayscale(70%);
-    width: 100% !important;
-    height: auto !important;
-  }
-  img:hover {
-   filter:none;
+    width: 100%;
+    height: auto;
   }
 
   @media screen and (max-width: 800px) {
@@ -31,7 +27,7 @@ const GalleryContainer = styled.div`
     column-count:         2;
    
     img {
-    height: 40vw !important;
+    height: 40vw;
   }
    } 
 }
@@ -44,49 +40,49 @@ const GalleryFlex = () => {
         <StaticImage
           height={600}
           width={600}
-          src="../images/Gallery/gallery1.jpg"
+          src="../images/Gallery/gallery1.webp"
           alt="image"
         />
         <StaticImage
           height={600}
           width={600}
-          src="../images/Gallery/gallery2.jpg"
+          src="../images/Gallery/gallery2.webp"
           alt="image"
         />
         <StaticImage
           height={600}
           width={600}
-          src="../images/Gallery/gallery9.jpg"
+          src="../images/Gallery/gallery9.webp"
           alt="image"
         />
         <StaticImage
           height={600}
           width={600}
-          src="../images/Gallery/gallery4.jpg"
+          src="../images/Gallery/gallery4.webp"
           alt="image"
         />
         <StaticImage
           height={600}
           width={600}
-          src="../images/Gallery/gallery5.jpg"
+          src="../images/Gallery/gallery5.webp"
           alt="image"
         />
         <StaticImage
           height={600}
           width={600}
-          src="../images/Gallery/gallery6.jpg"
+          src="../images/Gallery/gallery6.webp"
           alt="image"
         />
         <StaticImage
           height={600}
           width={600}
-          src="../images/Gallery/gallery7.jpg"
+          src="../images/Gallery/gallery7.webp"
           alt="image"
         />
         <StaticImage
           height={600}
           width={600}
-          src="../images/Gallery/gallery8.jpg"
+          src="../images/Gallery/gallery8.webp"
           alt="image"
         />
       </GalleryContainer>

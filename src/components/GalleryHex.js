@@ -24,7 +24,6 @@ const Image = styled.li`
   margin-bottom: -52%;
   clip-path: polygon(50% 0%, 100% 50%, 50% 99%, 0% 50%);
   transform: scale(1);
-  transition: all 0.25s;
 
   &:nth-child(5n + 1) {
     grid-column: 2 / span 2;
@@ -42,7 +41,7 @@ const GalleryHex = () => {
         <StaticImage
           width={600}
           height={600}
-          src="../images/Gallery/gallery1.jpg"
+          src="../images/Gallery/gallery1.webp"
           alt="image"
         />
       </Image>
@@ -50,7 +49,7 @@ const GalleryHex = () => {
         <StaticImage
           width={600}
           height={600}
-          src="../images/Gallery/gallery2.jpg"
+          src="../images/Gallery/gallery2.webp"
           alt="image"
         />
       </Image>
@@ -58,7 +57,7 @@ const GalleryHex = () => {
         <StaticImage
           width={600}
           height={600}
-          src="../images/Gallery/gallery3.jpg"
+          src="../images/Gallery/gallery3.webp"
           alt="image"
         />
       </Image>
@@ -66,7 +65,7 @@ const GalleryHex = () => {
         <StaticImage
           width={600}
           height={600}
-          src="../images/Gallery/gallery4.jpg"
+          src="../images/Gallery/gallery4.webp"
           alt="image"
         />
       </Image>
@@ -74,7 +73,7 @@ const GalleryHex = () => {
         <StaticImage
           width={600}
           height={600}
-          src="../images/Gallery/gallery5.jpg"
+          src="../images/Gallery/gallery5.webp"
           alt="image"
         />
       </Image>
@@ -82,7 +81,7 @@ const GalleryHex = () => {
         <StaticImage
           width={600}
           height={600}
-          src="../images/Gallery/gallery6.jpg"
+          src="../images/Gallery/gallery6.webp"
           alt="image"
         />
       </Image>
@@ -90,7 +89,7 @@ const GalleryHex = () => {
         <StaticImage
           width={600}
           height={600}
-          src="../images/Gallery/gallery7.jpg"
+          src="../images/Gallery/gallery7.webp"
           alt="image"
         />
       </Image>
