@@ -4,7 +4,7 @@ import styled, { css } from "styled-components"
 
 const Wrapper = styled.div`
   background: var(--clr-grey-1);
-  padding: 5rem 0;
+  padding: 1rem 0;
 `
 
 const GalleryContainer = styled.div`
@@ -28,7 +28,7 @@ const GalleryContainer = styled.div`
    
     img {
     height: 40vw;
-  }
+    }
    } 
 }
 `

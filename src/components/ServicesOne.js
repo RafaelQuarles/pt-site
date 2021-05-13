@@ -8,8 +8,11 @@ const ServiceContainer = styled.section`
   background: var(--clr-grey-1);
   padding: 1rem 2rem;
   margin: 0 auto;
-  @media screen and (min-width: 1000px) {
-    padding: 2rem 12rem 1rem 12rem;
+  @media screen and (min-width: 1000px) and (max-width: 1200px) {
+    padding: 2rem 15vw 1rem 15vw;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 2rem 20vw 1rem 20vw;
   }
 `
 

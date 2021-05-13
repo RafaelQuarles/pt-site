@@ -7,6 +7,9 @@ const FooterContainer = styled.div`
   background: var(--clr-grey-1);
   padding: 3rem 0;
   text-align: center;
+  @media screen and (max-width: 1000px) {
+    padding: 1rem 0;
+  }
 `
 
 const FooterText = styled.h4`
@@ -18,9 +21,15 @@ const FooterText = styled.h4`
 
   a {
     color: var(--clr-grey-10);
+    transition: var(--transition);
   }
   a:hover {
     color: var(--clr-primary-5);
+    letter-spacing: 4px;
+  }
+  @media screen and (max-width: 1000px) {
+    font-size: 10px;
+    bottom: 1rem;
   }
 `
 
